@@ -1,7 +1,7 @@
 /****************************************************************************
  * USB Loader GX resource files.
  * This file is generated automatically.
- * Includes 208 files.
+ * Includes 209 files.
  *
  * NOTE:
  * Any manual modification of this file will be overwriten by the generation.
@@ -84,10 +84,10 @@
 #include "gameinfo1a_png.h"
 #include "gameinfo2_png.h"
 #include "gameinfo2a_png.h"
-#include "gcncontroller_png.h"
-#include "gcncontrollerR_png.h"
 #include "gc_banner_bg_png.h"
 #include "gc_icon_bg_png.h"
+#include "gcncontroller_png.h"
+#include "gcncontrollerR_png.h"
 #include "guitar_png.h"
 #include "guitarR_png.h"
 #include "gxlogo_png.h"
@@ -206,6 +206,7 @@
 #include "wiispeakR_png.h"
 #include "zapper_png.h"
 #include "zapperR_png.h"
+#include "gxlogo_original_png.h"
 #include "bg_music_ogg.h"
 #include "button_click_ogg.h"
 #include "button_click2_ogg.h"
@@ -296,10 +297,10 @@ RecourceFile Resources::RecourceFiles[] =
 	{"gameinfo1a.png", gameinfo1a_png, gameinfo1a_png_size, NULL, 0},
 	{"gameinfo2.png", gameinfo2_png, gameinfo2_png_size, NULL, 0},
 	{"gameinfo2a.png", gameinfo2a_png, gameinfo2a_png_size, NULL, 0},
-	{"gcncontroller.png", gcncontroller_png, gcncontroller_png_size, NULL, 0},
-	{"gcncontrollerR.png", gcncontrollerR_png, gcncontrollerR_png_size, NULL, 0},
 	{"gc_banner_bg.png", gc_banner_bg_png, gc_banner_bg_png_size, NULL, 0},
 	{"gc_icon_bg.png", gc_icon_bg_png, gc_icon_bg_png_size, NULL, 0},
+	{"gcncontroller.png", gcncontroller_png, gcncontroller_png_size, NULL, 0},
+	{"gcncontrollerR.png", gcncontrollerR_png, gcncontrollerR_png_size, NULL, 0},
 	{"guitar.png", guitar_png, guitar_png_size, NULL, 0},
 	{"guitarR.png", guitarR_png, guitarR_png_size, NULL, 0},
 	{"gxlogo.png", gxlogo_png, gxlogo_png_size, NULL, 0},
@@ -418,6 +419,7 @@ RecourceFile Resources::RecourceFiles[] =
 	{"wiispeakR.png", wiispeakR_png, wiispeakR_png_size, NULL, 0},
 	{"zapper.png", zapper_png, zapper_png_size, NULL, 0},
 	{"zapperR.png", zapperR_png, zapperR_png_size, NULL, 0},
+	{"gxlogo_original.png", gxlogo_original_png, gxlogo_original_png_size, NULL, 0},
 	{"bg_music.ogg", bg_music_ogg, bg_music_ogg_size, NULL, 0},
 	{"button_click.ogg", button_click_ogg, button_click_ogg_size, NULL, 0},
 	{"button_click2.ogg", button_click2_ogg, button_click2_ogg_size, NULL, 0},
