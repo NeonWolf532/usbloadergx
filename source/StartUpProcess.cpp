@@ -40,7 +40,8 @@ StartUpProcess::StartUpProcess()
 	GXImageData = Resources::GetImageData("gxlogo.png");
 	GXImage = new GuiImage(GXImageData);
 	GXImage->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
-	GXImage->SetPosition(screenwidth / 2, screenheight / 2 - 50);
+	GXImage->SetScale((float)screenwidth / 296.0f);
+        GXImage->SetPosition(screenwidth / 2, screenheight / 2);
 
 	titleTxt = new GuiText("Loading...", 24, (GXColor){255, 255, 255, 255});
 	titleTxt->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
@@ -68,7 +69,7 @@ StartUpProcess::StartUpProcess()
 	else
 		cancelTxt = new GuiText("Press B to cancel", 22, (GXColor){255, 255, 255, 255});
 	cancelTxt->SetAlignment(ALIGN_CENTER, ALIGN_MIDDLE);
-	cancelTxt->SetPosition(screenwidth / 2, screenheight / 2 + 90);
+	cancelTxt->SetPosition(screenwidth / 2, screenheight - 30);
 
 	trigB = new GuiTrigger;
 	trigB->SetButtonOnlyTrigger(-1, WPAD_BUTTON_B | WPAD_CLASSIC_BUTTON_B, PAD_BUTTON_B);
@@ -528,9 +529,6 @@ void StartUpProcess::Draw()
 {
 	background->Draw();
 	GXImage->Draw();
-	titleTxt->Draw();
-	messageTxt->Draw();
-	versionTxt->Draw();
 	if (drawCancel)
 		cancelTxt->Draw();
 	Menu_Render();
